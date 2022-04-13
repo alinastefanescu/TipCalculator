@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+      </head>
+  <body>
+
+    <div class = "container">
+      <h1>Tip Calculator</h1>
+      <p> Find out how much you have to tip your waitress</p>
+
+      <div class="form-group">
+        <label for = "initialAmount">Amount to be paid:</label>
+        <input id = "initialAmount" type="text" placeholder = "Total amount on bill">
+      </div>
+
+      <br> 
+      <div class="form-group">
+        <label for = "tipPercentage" type="text" >Percentage you want to leave as tip: </label>
+        <input id = "tipPercentage" placeholder = "i.e. 10, 15">
+      </div>
+
+      <br> 
+      <div class="results">
+        <label for = "tip">The tip is:</label>
+        <span id="calculatedTip"></span>
+        <!-- aici sa fie afisata variabila tip din script.js -->
+      </div>
+
+      <br> 
+      <div class = "results">
+        <label for = "totalAmount"> The total amount is:</label>
+        <span id="totalToPay"></span>
+        <!-- aici sa fie afisata valoarea totala pe care o va plati -->
+      </div>
+      <br> 
+
+    <button onclick="window.location.href= 'http://www.euplatesc.ro' ">Pay Now</button>
+  </div>
+  
+
+  </body>
+</html>
